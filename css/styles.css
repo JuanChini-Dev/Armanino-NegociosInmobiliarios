@@ -748,7 +748,7 @@ select {
 /*     Projects     */
 /********************/
 .filter {
-	padding-top: 9.25rem;
+	padding-top: 6.25rem;
 	padding-bottom: 5.625rem;
 	text-align: center;
 }
@@ -770,14 +770,15 @@ select {
 	font-size: 1rem;
 }
 
-.filter .button:hover,
+.filter .button:hover
+
 .filter .button.is-checked {
 	color: #e71e43;
 }
 
 .filter .grid {
 	margin-right: auto;
-	max-width: 351px;
+	max-width: 350px;
 	margin-left: auto;
 }
 
@@ -976,7 +977,7 @@ select {
 /*     Contact     */
 /*******************/
 .form-1 {
-	padding-top: 1.25rem;
+	padding-top: 4.25rem;
 	padding-bottom: 8.5rem;
 	text-align: center;
 }
@@ -984,6 +985,7 @@ select {
 .form-1 .h2-heading {
 	margin-bottom: 1.125rem;
 	text-align: center;
+
 }
 
 .form-1 .h2-heading span {
