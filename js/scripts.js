@@ -14,7 +14,7 @@ window.onload = function () {
 function scrollFunction() {
 	if (document.documentElement.scrollTop > 30) {
 		document.getElementById("navbarExample").classList.add("top-nav-collapse");
-	} else if ( document.documentElement.scrollTop < 30 ) {
+	} else if (document.documentElement.scrollTop < 30) {
 		document.getElementById("navbarExample").classList.remove("top-nav-collapse");
 	}
 }
@@ -29,7 +29,7 @@ for (let i = 0; i < elements.length; i++) {
 }
 
 document.querySelector(".navbar-toggler").addEventListener("click", () => {
-  	document.querySelector(".offcanvas-collapse").classList.toggle("open");
+	document.querySelector(".offcanvas-collapse").classList.toggle("open");
 });
 
 // Hover on desktop
@@ -39,11 +39,11 @@ function toggleDropdown(e) {
 
 	setTimeout(
 		function () {
-		const shouldOpen = _d.matches(":hover");
-		_m.classList.toggle("show", shouldOpen);
-		_d.classList.toggle("show", shouldOpen);
+			const shouldOpen = _d.matches(":hover");
+			_m.classList.toggle("show", shouldOpen);
+			_d.classList.toggle("show", shouldOpen);
 
-		_d.setAttribute("aria-expanded", shouldOpen);
+			_d.setAttribute("aria-expanded", shouldOpen);
 		},
 		e.type === "mouseleave" ? 300 : 0
 	);
@@ -52,7 +52,7 @@ function toggleDropdown(e) {
 // On hover
 const dropdownCheck = document.querySelector('.dropdown');
 
-if (dropdownCheck !== null) { 
+if (dropdownCheck !== null) {
 	document.querySelector(".dropdown").addEventListener("mouseleave", toggleDropdown);
 	document.querySelector(".dropdown").addEventListener("mouseover", toggleDropdown);
 
@@ -69,7 +69,7 @@ if (dropdownCheck !== null) {
 		}
 	});
 }
-  
+
 
 /* Card Slider - Swiper */
 var cardSlider = new Swiper('.card-slider', {
@@ -94,38 +94,46 @@ var cardSlider = new Swiper('.card-slider', {
 
 
 /* Filter - Isotope */
+document.addEventListener('DOMContentLoaded', function () {
+
 const gridCheck = document.querySelector('.grid');
 
-if (gridCheck !== null) { 
-	// init Isotope
-	var iso = new Isotope( '.grid', {
+if (gridCheck !== null) {
+	// init Isotope	
+	var iso = new Isotope('.grid', {
 		itemSelector: '.element-item',
 		layoutMode: 'fitRows'
 	});
 
+	//DOCUMENT GET READY
+
+
+	  
+	
+
 	// bind filter button click
 	var filtersElem = document.querySelector('.filters-button-group');
-	filtersElem.addEventListener( 'click', function( event ) {
+	filtersElem.addEventListener('click', function (event) {
 		// only work with buttons
-		if ( !matchesSelector( event.target, 'button' ) )  {
+		if (!matchesSelector(event.target, 'button')) {
 			return;
 		}
 		var filterValue = event.target.getAttribute('data-filter');
 		// use matching filter function
 		iso.arrange({ filter: filterValue });
 	});
-	
+
 	// change is-checked class on buttons
 	var buttonGroups = document.querySelectorAll('.button-group');
-	for ( var i=0, len = buttonGroups.length; i < len; i++ ) {
+	for (var i = 0, len = buttonGroups.length; i < len; i++) {
 		var buttonGroup = buttonGroups[i];
-		radioButtonGroup( buttonGroup );
+		radioButtonGroup(buttonGroup);
 	}
-	
-	function radioButtonGroup( buttonGroup ) {
-		buttonGroup.addEventListener( 'click', function( event ) {
+
+	function radioButtonGroup(buttonGroup) {
+		buttonGroup.addEventListener('click', function (event) {
 			// only work with buttons
-			if ( !matchesSelector( event.target, 'button' ) )  {
+			if (!matchesSelector(event.target, 'button')) {
 				return;
 			}
 			buttonGroup.querySelector('.is-checked').classList.remove('is-checked');
@@ -133,6 +141,8 @@ if (gridCheck !== null) {
 		});
 	}
 }
+})
+
 
 
 /* Back To Top Button */

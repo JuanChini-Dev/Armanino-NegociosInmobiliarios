@@ -770,7 +770,7 @@ select {
 	font-size: 1rem;
 }
 
-.filter .button:hover
+.filter .button:hover,
 
 .filter .button.is-checked {
 	color: #e71e43;
@@ -784,6 +784,7 @@ select {
 
 .filter .element-item {
 	margin-bottom: 3rem;
+	
 }
 
 .filter .element-item a {
@@ -794,6 +795,7 @@ select {
 	margin-bottom: 1.125rem;
 	border-radius: 8px;
 	border: 1px solid #5e6576;
+	
 }
 
 .filter .element-item p {
