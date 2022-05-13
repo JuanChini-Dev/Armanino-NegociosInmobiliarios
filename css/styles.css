@@ -773,7 +773,7 @@ select {
 .filter .button:hover,
 
 .filter .button.is-checked {
-	color: #e71e43;
+	color: #ed3237;
 }
 
 .filter .grid {
@@ -1003,7 +1003,7 @@ select {
 }
 
 .form-1 .list-unstyled .fas {
-	color: #e71e43;
+	color: #ed3237;
 }
 
 
@@ -1144,7 +1144,7 @@ select {
 }
 
 .ex-cards-1 .card .fa-stack-2x {
-	color: #e71e43;
+	color: #ed3237;
 }
 
 .ex-cards-1 .card .fa-stack-1x {

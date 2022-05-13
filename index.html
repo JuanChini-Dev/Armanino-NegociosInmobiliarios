@@ -1,709 +1,569 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Your description">
-    <meta name="author" content="Your name">
+    <meta name="description" content="Your description" />
+    <meta name="author" content="Your name" />
 
     <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
-	<meta property="og:site_name" content="" /> <!-- website name -->
-	<meta property="og:site" content="" /> <!-- website link -->
-	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
-	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+    <meta property="og:site_name" content="" />
+    <!-- website name -->
+    <meta property="og:site" content="" />
+    <!-- website link -->
+    <meta property="og:title" content="" />
+    <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="" />
+    <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" />
+    <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" />
+    <!-- where do you want your post to link to -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- to have large image post format in Twitter -->
 
     <!-- Webpage Title -->
     <title>Armanino - Neg Inmobiliarios</title>
-    
+
     <!-- Styles -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/fontawesome-all.min.css" rel="stylesheet">
-    <link href="css/swiper.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
-	
-	<!-- Favicon  -->
-    <link rel="icon" href="images/LogoArmanino.jpeg">
-</head>
-<body data-bs-spy="scroll" data-bs-target="#navbarExample">
-    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/fontawesome-all.min.css" rel="stylesheet" />
+    <link href="css/swiper.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- Favicon  -->
+    <link rel="icon" href="images/LogoArmanino.jpeg" />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navbarExample">
     <!-- Navigation -->
-    <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
-        <div class="container">
+    <nav
+      id="navbarExample"
+      class="navbar navbar-expand-lg fixed-top navbar-light"
+      aria-label="Main navigation"
+    >
+      <div class="container">
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="index.html">
+          <img
+            src="images/LogoArmanino.jpeg"
+            alt="alternative"
+            style="width: 80px; height: 80px;"
+          />
+        </a>
 
-            <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="index.html"><img src="images/LogoArmanino.jpeg" alt="alternative" style="width: 80px; height:80px"></a> 
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text" href="index.html">Zinc</a> -->
 
-            <!-- Text Logo - Use this if you don't have a graphic logo -->
-            <!-- <a class="navbar-brand logo-text" href="index.html">Zinc</a> -->
+        <button
+          class="navbar-toggler p-0 border-0"
+          type="button"
+          id="navbarSideCollapse"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav ms-auto navbar-nav-scroll">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#header">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Propiedades</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#pricing">Pricing</a>
-                    </li> -->
-                    <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Drop</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                            <li><a class="dropdown-item" href="article.html">Article Details</a></li>
-                            <li><div class="dropdown-divider"></div></li>
-                            <li><a class="dropdown-item" href="terms.html">Terms Conditions</a></li>
-                            <li><div class="dropdown-divider"></div></li>
-                            <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
-                        </ul>
-                    </li> -->
-                </ul>
-                <span class="nav-item">
-                    <a class="btn-solid-sm" href="#contact">Contacto</a>
-                </span>
-            </div> <!-- end of navbar-collapse -->
-        </div> <!-- end of container -->
-    </nav> <!-- end of navbar -->
+        <div
+          class="navbar-collapse offcanvas-collapse"
+          id="navbarsExampleDefault"
+        >
+          <ul class="navbar-nav ms-auto navbar-nav-scroll">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#header">
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Propiedades</a>
+            </li>
+          </ul>
+          <span class="nav-item">
+            <a class="btn-solid-sm" href="#contact">Contacto</a>
+          </span>
+        </div>
+        <!-- end of navbar-collapse -->
+      </div>
+      <!-- end of container -->
+    </nav>
+    <!-- end of navbar -->
     <!-- end of navigation -->
 
-      
     <!-- Header -->
     <header id="header" class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-xl-5">
-                    <div class="text-container">
-                        <!-- <div class="section-title">Bienvenidos a Armanino Negocios Inmobiliarios</div> -->
-                        <h1 class="h1-large">Armanino Negocios Inmobiliarios</h1>
-                        <p class="p-large">Asesoramos y acompañamos al cliente, brindándole confianza y transparencia en el proceso de <b>COMPRA-VENTA</b> de un inmueble</p>
-                        <a class="btn-solid-lg" href="#services">Servicios Ofrecidos</a>
-                        <a class="quote" href="#contact"><i class="fas fa-paper-plane"></i>Contactanos</a>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6 col-xl-7">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/German2.png" alt="alternative"  style="max-width:75%">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </header> <!-- end of header -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-xl-5">
+            <div class="text-container">
+              <h1 class="h1-large">Armanino Negocios Inmobiliarios</h1>
+              <p class="p-large">
+                Asesoramos y acompañamos al cliente, brindándole confianza y
+                transparencia en el proceso de
+                <b>COMPRA-VENTA</b>
+                de un inmueble
+              </p>
+              <a class="btn-solid-lg" href="#services">Servicios Ofrecidos</a>
+              <a class="quote" href="#contact">
+                <i class="fas fa-paper-plane"></i>
+                Contactanos
+              </a>
+            </div>
+            <!-- end of text-container -->
+          </div>
+          <!-- end of col -->
+          <div class="col-lg-6 col-xl-7">
+            <div class="image-container">
+              <img
+                class="img-fluid"
+                src="images/German2.png"
+                alt="alternative"
+                style="max-width: 75%;"
+              />
+            </div>
+            <!-- end of image-container -->
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+      </div>
+      <!-- end of container -->
+    </header>
     <!-- end of header -->
-
+    <!-- end of header -->
 
     <!-- Services -->
     <div id="services" class="cards-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-icon red">
-                            <span class="fas fa-building"></span>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Compra y Venta de Propiedades</h5>
-                            <!-- <p>Lorem ipsum dolor sit amet, consect adipiscing elit nulla id nisl blah nor</p> -->
-                            <ul class="list-unstyled li-space-lg">
-                                <li class="d-flex">
-                                    <i class="fas fa-check"></i>
-                                    <div class="flex-grow-1">Tasación</div>
-                                </li>
-                                <li class="d-flex">
-                                    <i class="fas fa-check"></i>
-                                    <div class="flex-grow-1">Desarrollo</div>
-                                </li>
-                                <!-- <li class="d-flex">
-                                    <i class="fas fa-check"></i>
-                                    <div class="flex-grow-1">Fusce pulvinar eu mi ac molestie</div>
-                                </li>
-                                <li class="d-flex">
-                                    <i class="fas fa-check"></i>
-                                    <div class="flex-grow-1">Curabitur consequat nisl eget</div>
-                                </li> -->
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- end of card -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- Card -->
+            <div class="card">
+              <div class="card-icon red">
+                <span class="fas fa-building"></span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Compra y Venta de Propiedades</h5>
+                <ul class="list-unstyled li-space-lg">
+                  <li class="d-flex">
+                    <i class="fas fa-check"></i>
+                    <div class="flex-grow-1">Asesoramiento</div>
+                  </li>
+                  <li class="d-flex">
+                    <i class="fas fa-check"></i>
+                    <div class="flex-grow-1">Tasación</div>
+                  </li>
 
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-icon black">
-                            <span class="fas fa-user-tie"></span>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Administración de Propiedades</h5>
-                            <!-- <p>Nam eu erat tellused vivamus vitae sem in tortor pharetra vehicula orn</p> -->
-                            <ul class="list-unstyled li-space-lg">
-                                <li class="d-flex">
-                                    <i class="fas fa-check"></i>
-                                    <div class="flex-grow-1">Mantenimiento de propiedades</div>
-                                </li>
-                                <li class="d-flex">
-                                    <i class="fas fa-check"></i>
-                                    <div class="flex-grow-1">Publicación</div>
-                                </li>
-                                <li class="d-flex">
-                                    <i class="fas fa-check"></i>
-                                    <div class="flex-grow-1">Marketing</div>
-                                </li>
-                                <li class="d-flex">
-                                    <i class="fas fa-check"></i>
-                                    <div class="flex-grow-1">Administración</div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- end of card -->
+                  <li class="d-flex">
+                    <i class="fas fa-check"></i>
+                    <div class="flex-grow-1">Desarrollo</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- end of card -->
 
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-icon red">
-                            <span class="fas fa-calculator"></span>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Asesoramiento y Tasación en negocios inmobiliarios</h5>
-                            <!-- <p>Nullam lobortis porta diam, vitae dictum metus placerat luctus bora</p> -->
-                            <ul class="list-unstyled li-space-lg">
-                                <li class="d-flex">
-                                    <i class="fas fa-check"></i>
-                                    <div class="flex-grow-1">Inversión a corto y largo plazo</div>
-                                </li>
-                                <li class="d-flex">
-                                    <i class="fas fa-check"></i>
-                                    <div class="flex-grow-1">Emprendimiento</div>
-                                </li>
-                                <li class="d-flex">
-                                    <i class="fas fa-check"></i>
-                                    <div class="flex-grow-1">Créditos</div>
-                                </li>
-                            </ul>
-                        </div>
+            <!-- Card -->
+            <div class="card">
+              <div class="card-icon black">
+                <span class="fas fa-user-tie"></span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Administración de Propiedades</h5>
+                <ul class="list-unstyled li-space-lg">
+                  <li class="d-flex">
+                    <i class="fas fa-check"></i>
+                    <div class="flex-grow-1">
+                      Administracion y mantenimiento
                     </div>
-                    <!-- end of card -->
+                  </li>
+                  <li class="d-flex">
+                    <i class="fas fa-check"></i>
+                    <div class="flex-grow-1">Publicación</div>
+                  </li>
+                  <li class="d-flex">
+                    <i class="fas fa-check"></i>
+                    <div class="flex-grow-1">Marketing</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- end of card -->
 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of cards-1 -->
+            <!-- Card -->
+            <div class="card">
+              <div class="card-icon red">
+                <span class="fas fa-calculator"></span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Asesoramiento en inversiones inmobiliarias
+                </h5>
+                <!-- <p>Nullam lobortis porta diam, vitae dictum metus placerat luctus bora</p> -->
+                <ul class="list-unstyled li-space-lg">
+                  <li class="d-flex">
+                    <i class="fas fa-check"></i>
+                    <div class="flex-grow-1">
+                      Inversión a corto y largo plazo
+                    </div>
+                  </li>
+                  <li class="d-flex">
+                    <i class="fas fa-check"></i>
+                    <div class="flex-grow-1">Emprendimiento</div>
+                  </li>
+                  <li class="d-flex">
+                    <i class="fas fa-check"></i>
+                    <div class="flex-grow-1">Créditos</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- end of card -->
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of cards-1 -->
     <!-- end of services -->
-
-
-    <!-- Details 1 -->
-    <!-- <div id="details" class="basic-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-xl-7">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/details-1.svg" alt="alternative">
-                    </div> end of image-container -->
-                <!-- </div> <!-- end of col -->
-                <!-- <div class="col-lg-6 col-xl-5">
-                    <div class="text-container">
-                        <h2><span>Perfect solution</span><br> for your small business</h2> -->
-                        <!-- <p>Maecenas fringilla quam posuere, pellentesque est nec, gravida turpis. Integer vitae mollis felis. Integer id quam id tellus hendrerit laciniad binfer</p>
-                        <p>Sed id dui rutrum, dictum urna eu, accumsan turpis. Fusce id auctor velit, sed viverra dui rem dina</p>
-                        <a class="btn-solid-reg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Modal</a> -->
-                    <!-- </div> end of text-container -->
-                <!-- </div> end of col -->
-            <!-- </div> end of row -->
-        <!-- </div> end of container -->
-    <!-- </div> end of basic-1 -->
-    <!-- end of details 1 -->
-
-
-    <!-- Details Modal -->
-    <div id="staticBackdrop" class="modal fade" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="row">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <div class="col-lg-8">
-                        <div class="image-container">
-                            <img class="img-fluid" src="images/details-modal.jpg" alt="alternative">
-                        </div> <!-- end of image-container -->
-                    </div> <!-- end of col -->
-                    <div class="col-lg-4">
-                        <h3>Goals Setting</h3>
-                        <hr>
-                        <p>In gravida at nunc sodales pretium. Vivamus semper, odio vitae mattis auctor, elit elit semper magna ac tum nico vela spider</p>
-                        <h4>User Feedback</h4>
-                        <p>Sapien vitae eros. Praesent ut erat a tellus posuere nisi more thico cursus pharetra finibus posuere nisi. Vivamus feugiat</p>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="d-flex">
-                                <i class="fas fa-chevron-right"></i>
-                                <div class="flex-grow-1">Tincidunt sem vel brita bet mala</div>
-                            </li>
-                            <li class="d-flex">
-                                <i class="fas fa-chevron-right"></i>
-                                <div class="flex-grow-1">Sapien condimentum sacoz sil necr</div>
-                            </li>
-                            <li class="d-flex">
-                                <i class="fas fa-chevron-right"></i>
-                                <div class="flex-grow-1">Fusce interdum nec ravon fro urna</div>
-                            </li>
-                            <li class="d-flex">
-                                <i class="fas fa-chevron-right"></i>
-                                <div class="flex-grow-1">Integer pulvinar biolot bat tortor</div>
-                            </li>
-                            <li class="d-flex">
-                                <i class="fas fa-chevron-right"></i>
-                                <div class="flex-grow-1">Id ultricies fringilla fangor raq trinit</div>
-                            </li>
-                        </ul>
-                        <a id="modalCtaBtn" class="btn-solid-reg" href="#">Details</a>
-                        <button type="button" class="btn-outline-reg" data-bs-dismiss="modal">Close</button>
-                    </div> <!-- end of col -->
-                </div> <!-- end of row -->
-            </div> <!-- end of modal-content -->
-        </div> <!-- end of modal-dialog -->
-    </div> <!-- end of modal -->
-    <!-- end of details modal -->
-
 
     <!-- Details 2 -->
     <div class="counter">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-xl-5">
-                    <div class="text-container">
-                        <h2><span>Tu asesor inmobiliario de confianza</span><br> Brindando soluciones para todas las necesidades</h2>
-                        <p>In gravida vitae nulla vitae tincidunt imperdiet ante. Pellentesque aliquet mi eu tortor dictum, non imperdiet ante viverra. Phasellus eget enim orci flig rine bilo</p>
-                        
-                        <!-- Counter -->
-                        <div class="counter-container">
-                            <div class="counter-cell">
-                                <div data-purecounter-start="0" data-purecounter-end="80" data-purecounter-duration="2" class="purecounter">1</div>
-                                <div class="counter-info">Operaciones realizadas</div>
-                            </div> <!-- end of counter-cell -->
-                            <div class="counter-cell red">
-                                <div data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="2" class="purecounter">1</div>
-                                <div class="counter-info">Clientes satisfechos</div>
-                            </div> <!-- end of counter-cell -->
-                        </div> <!-- end of counter-container -->
-                        <!-- end of counter -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-xl-5">
+            <div class="text-container">
+              <h2 class="mb-4">
+                <span>Tu asesor inmobiliario de confianza</span>
+                <br />
+                Brindando soluciones para todas tus necesidades
+                <br />
+              </h2>
 
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6 col-xl-7">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/details-2.svg" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of counter -->
+              <!-- Counter -->
+              <div class="counter-container">
+                <div class="counter-cell">
+                  <div
+                    data-purecounter-start="0"
+                    data-purecounter-end="80"
+                    data-purecounter-duration="2"
+                    class="purecounter"
+                  >
+                    1
+                  </div>
+                  <div class="counter-info">Operaciones realizadas</div>
+                </div>
+                <!-- end of counter-cell -->
+                <div class="counter-cell red">
+                  <div
+                    data-purecounter-start="0"
+                    data-purecounter-end="100"
+                    data-purecounter-duration="2"
+                    class="purecounter"
+                  >
+                    1
+                  </div>
+                  <div class="counter-info">Clientes satisfechos</div>
+                </div>
+                <!-- end of counter-cell -->
+              </div>
+              <!-- end of counter-container -->
+              <!-- end of counter -->
+            </div>
+            <!-- end of text-container -->
+          </div>
+          <!-- end of col -->
+          <div class="col-lg-6 col-xl-7">
+            <div class="image-container">
+              <img
+                class="img-fluid"
+                src="images/details-2.svg"
+                alt="alternative"
+              />
+            </div>
+            <!-- end of image-container -->
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of counter -->
     <!-- end of details 2 -->
 
-
     <!-- Projects -->
-	<div id="projects" class="filter bg-gray">
-		<div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading">Nuestras propiedades</h2>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- Filter -->
-                    <div class="button-group filters-button-group">
-                        <button class="button is-checked" data-filter="*">Todas las propiedades</button>
-                        <button class="button" data-filter=".departamentos">Departamentos</button>
-                        <button class="button" data-filter=".casas">Casas</button>
-                        <button class="button" data-filter=".terrenos">Terrenos</button>
-                    </div> <!-- end of button group -->
-                    <div class="grid">
-                        <div class="element-item departamentos">
-                            <a href="article.html">
-                                <img class="img-fluid" src="images/project-1.jpg" alt="alternative">
-                                <p><strong>Online banking</strong> - pellentesque tincidunt leo eu laoreedt integer quis vanos compren</p>
-                            </a>
-                        </div>
-                        <div class="element-item departamentos">
-                            <a href="https://clasificados.lavoz.com.ar/avisos/departamentos/4486468/vende-1-dorm-a-estrenar-con-balcon-45-mts-propios" target="_blanc" rel="noopener noreferrer">
-                                <img class="img-fluid" src="images/depto.jpeg" height="1000px" alt="alternative">
-                                <p><strong>VENTA</strong> - Departamento 1 dormitorio a <b>estrenar</b> con balcón, contrafrente, terraza con asador - Barrio Pueyrredón</p>
-                                
-                            </a>
-                        </div>
-                        <div class="element-item terrenos">
-                            <a href="article.html">
-                                <img class="img-fluid" src="images/project-3.jpg" alt="alternative">
-                                <p><strong>Refinance firm</strong> - arcu a neque congue finibus doneci malesuada et purus melan bris</p>
-                            </a>
-                        </div>
-                        <div class="element-item departamentos">
-                            <a href="article.html">
-                                <img class="img-fluid" src="images/project-4.jpg" alt="alternative">
-                                <p><strong>Financial products</strong> - id aliquam ut malesuada eros utr varius blandit aliquam tinci bist</p>
-                            </a>
-                        </div>
-                        <div class="element-item casas">
-                            <a href="article.html">
-                                <img class="img-fluid" src="images/project-5.jpg" alt="alternative">
-                                <p><strong>Credit cards</strong> - magna a feugiat cras a semper tellus in rhoncus vehicula tellus rugo</p>
-                            </a>
-                        </div>
-                        <div class="element-item casas">
-                            <a href="article.html">
-                                <img class="img-fluid" src="images/project-6.jpg" alt="alternative">
-                                <p><strong>Software robots</strong> - vel sodales dolor donec a est sapien integer pharetr bilom conva</p>
-                            </a>
-                        </div>
-                    </div> <!-- end of grid -->
-                    <!-- end of filter -->
-                    
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-		</div> <!-- end of container -->
-    </div> <!-- end of filter -->
+    <div id="projects" class="filter bg-gray">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="h2-heading">Nuestras propiedades</h2>
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- Filter -->
+            <div class="button-group filters-button-group">
+              <button class="button is-checked" data-filter="*">
+                Todas las propiedades
+              </button>
+              <button class="button" data-filter=".departamentos">
+                Departamentos
+              </button>
+              <button class="button" data-filter=".casas">Casas</button>
+              <button class="button" data-filter=".terrenos">Terrenos</button>
+              <br />
+              <button class="button" data-filter=".alquiler">Alquileres</button>
+              <button class="button" data-filter=".venta">Venta</button>
+            </div>
+            <!-- end of button group -->
+            <div class="grid" id="cards"></div>
+            <!-- end of grid -->
+            <!-- end of filter -->
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of filter -->
     <!-- end of projects -->
-
-
-    <!-- Testimonials -->
-    <!-- <div class="slider-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-
-                    <!-- Card Slider -->
-                    <!-- <div class="slider-container">
-                        <div class="swiper-container card-slider">
-                            <div class="swiper-wrapper">
-                                 -->
-                                <!-- Slide -->
-                                <!-- <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="quotes" src="images/quotes.svg" alt="alternative">
-                                        <div class="card-body">
-                                            <p class="testimonial-text">Fusce tincidunt dui nec diam varius venenatis. Nullam tristique rutrum odio, ut tincidunt erat dictum in. Etiam et aliquet mi, et vehicula elit fusce porta ullamcorper</p>
-                                            <div class="details">
-                                                <img class="testimonial-image" src="images/testimonial-1.jpg" alt="alternative">
-                                                <div class="text">
-                                                    <div class="testimonial-author">Samantha Bloom</div>
-                                                    <div class="occupation">Team Leader - Syncnow</div> --> 
-                                               <!-- </div> <!-- end of text -->
-                                           <!-- </div> <!-- end of testimonial-details -->
-                                       <!-- </div>
-                                   <!-- </div> 
-                               <!-- </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-
-                                <!-- Slide -->
-                                <!-- <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="quotes" src="images/quotes.svg" alt="alternative">
-                                        <div class="card-body">
-                                            <p class="testimonial-text">Mauris ut mattis nisl. Nunc ultrices nisi eget nisl pulvinar iaculis vitae ac nulla. Nullam fringilla varius blandit. Nam sit amet eleifend justo blogo rovan de chichis kokos venir dab</p>
-                                            <div class="details">
-                                                <img class="testimonial-image" src="images/testimonial-2.jpg" alt="alternative">
-                                                <div class="text">
-                                                    <div class="testimonial-author">Mike Page</div>
-                                                    <div class="occupation">Developer - Chainlink</div> -->
-                                             <!--   </div> <!-- end of text -->
-                                         <!--   </div> <!-- end of testimonial-details -->
-                                     <!--   </div>
-                                 <!--   </div> 
-                             <!--   </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-
-                                <!-- Slide -->
-                                <!-- <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="quotes" src="images/quotes.svg" alt="alternative">
-                                        <div class="card-body">
-                                            <p class="testimonial-text">Nam sit amet eleifend justo. Aliquam sit amet lacinia enim, eget facilisis ex. Ut pretium cursus eleifend. Integer feugiat malesuada quam vel basil venis proca jilo</p>
-                                            <div class="details">
-                                                <img class="testimonial-image" src="images/services-icon-bg-red.svg" alt="alternative">
-                                                <div class="text">
-                                                    <div class="testimonial-author">Mary Longhorn</div>
-                                                    <div class="occupation">Manager - Firstdev</div> -->
-                                               <!-- </div> <!-- end of text -->
-                                           <!-- </div> <!-- end of testimonial-details -->
-                                       <!-- </div>
-                                   <!-- </div> 
-                               <!-- </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-
-                                <!-- Slide -->
-                                <!-- <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="quotes" src="images/quotes.svg" alt="alternative">
-                                        <div class="card-body">
-                                            <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur ing elit. Nulla id nisl tempus risus facilisis efficr ut tincidunt vitae enim non vehicula. Phases vitae metus in felis gravida ultrices zimbo</p>
-                                            <div class="details">
-                                                <img class="testimonial-image" src="images/testimonial-4.jpg" alt="alternative">
-                                                <div class="text">
-                                                    <div class="testimonial-author">Ronny Drummer</div> -->
-                                                    <!--<div class="occupation">Designer - Sawdust</div>
-                                                <!--</div> <!-- end of text -->
-                                            <!--</div> <!-- end of testimonial-details -->
-                                        <!--</div>
-                                    <!--</div> 
-                                <!--</div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-
-                            <!--</div> <!-- end of swiper-wrapper -->
-        
-                            <!-- Add Arrows -->
-                            <!--<div class="swiper-button-next"></div>
-                        <!--    <div class="swiper-button-prev"></div>
-                            <!-- end of add arrows -->
-        
-                    <!--    </div> <!-- end of swiper-container -->
-                <!--    </div> <!-- end of slider-container -->
-                    <!-- end of card slider -->
-
-            <!--    </div> <!-- end of col -->
-        <!--    </div> <!-- end of row -->
-        <!-- </div> end of container -->
-    <!-- </div> end of slider-1 -->
-    <!-- end of testimonials -->
-
-
-    <!-- Pricing -->
-    <!-- <div id="pricing" class="cards-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading"><span>Choose the package</span><br> that fits your budget and project</h2>
-                </div> <!-- end of col -->
-            <!-- </div> end of row -->
-            <!-- <div class="row"> -->
-                <!-- <div class="col-lg-12"> -->
-                    
-                    <!-- Card -->
-                    <!-- <div class="card">
-                        <div class="card-body">
-                            <div class="card-title">
-                                <img class="decoration-lines" src="images/decoration-lines.svg" alt="alternative"><span>Landing page</span><img class="decoration-lines flipped" src="images/decoration-lines.svg" alt="alternative">
-                            </div>
-                            <ul class="list-unstyled li-space-lg">
-                                <li>Fusce pulvinar eu mi acm</li>
-                                <li>Curabitur consequat nisl bro</li>
-                                <li>Reget facilisis molestie</li>
-                                <li>Vivamus vitae sem in tortor</li>
-                                <li>Pharetra vehicula ornares</li>
-                                <li>Vivamus dignissim sit amet</li>
-                                <li>Ut convallis aliquama set</li>
-                            </ul>
-                            <div class="price">$200</div>
-                            <a href="#contact" class="btn-outline-reg">Get quote</a> -->
-                        <!-- </div> -->
-                    <!-- </div> -->
-                    <!-- end of card -->
-
-                    <!-- Card -->
-                    <!-- <div class="card">
-                        <div class="card-body">
-                            <div class="card-title">
-                                <img class="decoration-lines" src="images/decoration-lines.svg" alt="alternative"><span>Corporate site</span><img class="decoration-lines flipped" src="images/decoration-lines.svg" alt="alternative">
-                            </div>
-                            <ul class="list-unstyled li-space-lg">
-                                <li>Nunc commodo magna quis</li>
-                                <li>Lacus fermentum tincidunt</li>
-                                <li>Nullam lobortis porta diam</li>
-                                <li>Announcing of invita mro</li>
-                                <li>Dictum metus placerat luctus</li>
-                                <li>Sed laoreet blandit mollis</li>
-                                <li>Mauris non luctus est</li>
-                            </ul>
-                            <div class="price">$300</div>
-                            <a href="#contact" class="btn-outline-reg">Get quote</a>
-                        </div>
-                    </div>
-                    end of card -->
-
-                    <!-- Card -->
-                    <!-- <div class="card">
-                        <div class="card-body">
-                            <div class="card-title">
-                                <img class="decoration-lines" src="images/decoration-lines.svg" alt="alternative"><span>Online shop</span><img class="decoration-lines flipped" src="images/decoration-lines.svg" alt="alternative">
-                            </div>
-                            <ul class="list-unstyled li-space-lg">
-                                <li>Quisque rutrum mattis</li>
-                                <li>Quisque tristique cursus lacus</li>
-                                <li>Interdum sollicitudin maec</li>
-                                <li>Quam posuere, pellentesque</li>
-                                <li>Est nec, gravida turpis integer</li>
-                                <li>Mollis felis. Integer id quam</li>
-                                <li>Id tellus hendrerit lacinia</li>
-                            </ul>
-                            <div class="price">$400</div>
-                            <a href="#contact" class="btn-outline-reg">Get quote</a>
-                        </div>
-                    </div>
-                    <!-- end of card -->
-
-                <!-- </div> end of col -->
-            <!-- </div> end of row -->
-        <!-- </div> end of container -->
-    <!-- </div> end of cards-2 --> 
-    <!-- end of pricing -->
-
-
-    <!-- Invitation -->
-    <!-- <div class="basic-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="text-container">
-                        <h4>In gravida at nunc sodales pretium. Vivamus semper, odio vitae mattis auctor, elit elit semper magna rico</h4>
-                        <p class="p-large">Ac tristique velit sapien vitae eros. Praesent ut erat a tellus cursus pharetra finibus posuere nisi. Vivamus feugiat tincidunt sem pre toro</p>
-                    </div> <!-- end of text-container -->
-                <!-- </div> end of col -->
-            <!-- </div> end of row -->
-        <!-- </div> end of container -->
-    <!-- </div> end of basic-2 -->
-    <!-- end of invitation --> 
-
 
     <!-- Contact -->
     <div id="contact" class="form-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading"><br>Contactame</h2>
-                    <p class="p-heading">Vel malesuada sapien condimentum nec. Fusce interdum nec urna et finibus pulvinar tortor id</p>
-                    <ul class="list-unstyled li-space-lg">
-                        <li><i class="fas fa-map-marker-alt"></i> &nbsp;Calle Falsa 123 - Cordoba - Argentina</li>
-                        <li><i class="fas fa-phone"></i> &nbsp;<a href="tel:+543518048837">+543518048837</a></li>
-                        <li><i class="fas fa-envelope"></i> &nbsp;<a href="mailto:germanarmanino@gmail.com">germanarmanino@gmail.com</a></li>
-                    </ul>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-10 offset-lg-1">
-                    
-                    <!-- Contact Form -->
-                    <form action="mailto:chini195@gmail.com" method="post">
-                        <div class="form-group ">
-                            <input type="text" class="form-control-input" placeholder="Nombre Completo" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control-input" placeholder="Correo" required>
-                        </div>
-                        <div class="form-group">
-                            <select class="form-control-select" required>
-                                <option class="select-option" value="" disabled selected>Tipo de Propiedad</option>
-                                <option class="select-option" value="Company Website">Departamentos</option>
-                                <option class="select-option" value="Landing Page">Casas</option>
-                                <option class="select-option" value="Online Shop">Terrenos</option>
-                                <option class="select-option" value="Online Shop">Otros</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control-textarea" placeholder="Escriba aqui su mensaje..." required></textarea>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit"  class="form-control-submit-button">Enviar</button>
-                        </div>
-                    </form>
-                    <!-- end of contact form -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of form-1 -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="h2-heading">
+              <br />
+              Contactame
+            </h2>
+            <ul class="list-unstyled li-space-lg">
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                &nbsp;Av. Fuerza Aérea N° 2170. - 1° Piso - Galería Paseo El
+                Rosedal- Cordoba - Argentina
+              </li>
+              <br />
+              <li>
+                <i class="fas fa-phone"></i>
+                &nbsp;
+                <a href="tel:+543518048837">+543518048837</a>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                &nbsp;
+                <a href="tel:+543513603539">+543513603539</a>
+              </li>
+              <br />
+              <li>
+                <i class="fas fa-envelope"></i>
+                &nbsp;
+                <a href="mailto:gerarmanino@hotmail.com">
+                  gerarmanino@hotmail.com
+                </a>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                &nbsp;
+                <a href="mailto:ivananoeliajesus@gmail.com">
+                  ivananoeliajesus@gmail.com
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+        <div class="row">
+          <div class="col-lg-10 offset-lg-1">
+            <!-- Contact Form -->
+            <form action="php/form.php" method="POST">
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="nombre"
+                  class="form-control-input"
+                  placeholder="Nombre Completo"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control-input"
+                  placeholder="Correo"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <select class="form-control-select" required>
+                  <option class="select-option" value="" disabled selected>
+                    Tipo de Propiedad
+                  </option>
+                  <option
+                    class="select-option"
+                    name="tipoPropiedad"
+                    value="Company Website"
+                  >
+                    Departamentos
+                  </option>
+                  <option
+                    class="select-option"
+                    name="tipoPropiedad"
+                    value="Landing Page"
+                  >
+                    Casas
+                  </option>
+                  <option
+                    class="select-option"
+                    name="tipoPropiedad"
+                    value="Online Shop"
+                  >
+                    Terrenos
+                  </option>
+                  <option
+                    class="select-option"
+                    name="tipoPropiedad"
+                    value="Online Shop"
+                  >
+                    Otros
+                  </option>
+                </select>
+              </div>
+              <div class="form-group">
+                <textarea
+                  name="mensaje"
+                  class="form-control-textarea"
+                  placeholder="Escriba aqui su mensaje..."
+                  required
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="form-control-submit-button">
+                  Enviar
+                </button>
+              </div>
+            </form>
+            <!-- end of contact form -->
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+      </div>
+      <!-- end of container -->
+    </div>
+    <!-- end of form-1 -->
     <!-- end of contact -->
-
 
     <!-- Footer -->
     <div class="footer bg-gray">
-        <img class="decoration-city" src="images/decoration-city.svg" alt="alternative">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h4>Pellentesque aliquet mi eu tortor dictum, non imperdiet ante viverra. Phasellus eget enim orci ut pellentes troc</h4>
-                    <div class="social-container">
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-facebook-f fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <!-- <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-twitter fa-stack-1x"></i>
-                            </a>
-                        </span> -->
-                        <!-- <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-pinterest-p fa-stack-1x"></i>
-                            </a>
-                        </span> -->
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-instagram fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-linkedin fa-stack-1x"></i>
-                            </a>
-                        </span>
-                    </div> <!-- end of social-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of footer -->  
+      <img
+        class="decoration-city"
+        src="images/decoration-city.svg"
+        alt="alternative"
+      />
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h4>
+              Armanino Negocios Inmobiliarios, acompañando tus inversiones
+              inmobiliarias desde siempre
+            </h4>
+            <div class="social-container">
+              <span class="fa-stack">
+                <a href="#your-link">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x"></i>
+                </a>
+              </span>
+              <span class="fa-stack">
+                <a href="#your-link">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-instagram fa-stack-1x"></i>
+                </a>
+              </span>
+              <span class="fa-stack">
+                <a href="#your-link">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-linkedin fa-stack-1x"></i>
+                </a>
+              </span>
+            </div>
+            <!-- end of social-container -->
+          </div>
+          <!-- end of col -->
+        </div>
+        <!-- end of row -->
+      </div>
+      <!-- end of container -->
+    </div>
     <!-- end of footer -->
-
+    <!-- end of footer -->
 
     <!-- Copyright -->
     <div class="copyright bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <ul class="list-unstyled li-space-lg p-small">
-                        <!-- <li><a href="article.html">Article Details</a></li> -->
-                        <li><a href="terms.html">Terminos y Condiciones</a></li>
-                        <!-- <li><a href="privacy.html">Privacy Policy</a></li> -->
-                    </ul>
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
-                    <p class="p-small statement">Copyright © <a href="#">Juan Chini</a></p>
-                </div> <!-- end of col -->
-                <!-- <div class="col-lg-3"> -->
-                    <!-- <p class="p-small statement">Distributed By: <a href="https://themewagon.com/" target="_blank">ThemeWagon</a></p> -->
-                <!-- </div> end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of copyright --> 
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <ul class="list-unstyled li-space-lg p-small">
+              <!-- <li><a href="article.html">Article Details</a></li> -->
+              <li><a href="terms.html">Terminos y Condiciones</a></li>
+              <!-- <li><a href="privacy.html">Privacy Policy</a></li> -->
+            </ul>
+          </div>
+          <!-- end of col -->
+          <div class="col-lg-6">
+            <p class="p-small statement">
+              Copyright ©
+              <a href="#">Juan Chini</a>
+            </p>
+          </div>
+          <!-- end of col -->
+
+          <!-- </div> end of col -->
+        </div>
+        <!-- enf of row -->
+      </div>
+      <!-- end of container -->
+    </div>
     <!-- end of copyright -->
-    
+    <!-- end of copyright -->
 
     <!-- Back To Top Button -->
     <button onclick="topFunction()" id="myBtn">
-        <img src="images/up-arrow.png" alt="alternative">
+      <img src="images/up-arrow.png" alt="alternative" />
     </button>
     <!-- end of back to top button -->
-    	
+
     <!-- Scripts -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
-    <script src="js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
-    <script src="js/imagesLoaded.min.js"></script> <!-- Images loaded -->
-    <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
-</body>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Bootstrap framework -->
+    <script src="js/swiper.min.js"></script>
+    <!-- Swiper for image and text sliders -->
+    <script src="js/purecounter.min.js"></script>
+    <!-- Purecounter counter for statistics numbers -->
+    <script src="js/imagesLoaded.min.js"></script>
+    <!-- Images loaded -->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <!-- Isotope for filter -->
+    <script src="js/scripts.js"></script>
+    <!-- Custom scripts -->
+  </body>
 </html>
