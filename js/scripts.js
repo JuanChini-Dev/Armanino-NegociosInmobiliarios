@@ -104,7 +104,7 @@ var cardSlider = new Swiper('.card-slider', {
 
 let prop = [
   {
-    operacion: 'Venta',
+    operacion: 'Venta -',
     tipo: 'Terrenos',
     descripcion: 'Casa en venta en la colonia del Valle',
     imagen: 'depto.jpeg',
@@ -112,7 +112,7 @@ let prop = [
       'https://clasificados.lavoz.com.ar/avisos/casas/4622869/se-vende-casa-2-dor-empalme-muy-buena-ubicacion-reciclar',
   },
   {
-    operacion: 'Alquiler',
+    operacion: 'Alquiler -',
     tipo: 'Casas',
     descripcion: 'Casa en alquiler en la colonia del Valle',
     imagen: 'depto.jpeg',
@@ -120,7 +120,7 @@ let prop = [
       'https://clasificados.lavoz.com.ar/avisos/casas/4622869/se-vende-casa-2-dor-empalme-muy-buena-ubicacion-reciclar',
   },
   {
-    operacion: 'Alquiler',
+    operacion: 'Alquiler -',
     tipo: 'Casas',
     descripcion: 'Casa en alquiler en la colonia del Valle',
     imagen: 'depto.jpeg',
@@ -128,7 +128,7 @@ let prop = [
       'https://clasificados.lavoz.com.ar/avisos/casas/4622869/se-vende-casa-2-dor-empalme-muy-buena-ubicacion-reciclar',
   },
   {
-    operacion: 'Venta',
+    operacion: 'Venta -',
     tipo: 'Terrenos',
     descripcion: 'Casa en venta en la colonia del Valle',
     imagen: 'depto.jpeg',
@@ -136,7 +136,7 @@ let prop = [
       'https://clasificados.lavoz.com.ar/avisos/casas/4622869/se-vende-casa-2-dor-empalme-muy-buena-ubicacion-reciclar',
   },
   {
-    operacion: 'Alquiler',
+    operacion: 'Alquiler -',
     tipo: 'Casas',
     descripcion: 'Casa en alquiler en la colonia del Valle',
     imagen: 'depto.jpeg',
@@ -144,7 +144,7 @@ let prop = [
       'https://clasificados.lavoz.com.ar/avisos/casas/4622869/se-vende-casa-2-dor-empalme-muy-buena-ubicacion-reciclar',
   },
   {
-    operacion: 'Alquiler',
+    operacion: 'Alquiler -',
     tipo: 'Casas',
     descripcion: 'Casa en alquiler en la colonia del Valle',
     imagen: 'depto.jpeg',
@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	  		<a href="${propiedades[keys].web}" target="_blank">
 	  			<img class="img-fluid" src="images/${propiedades[keys].imagen}" alt="alternative"  />
 	  				<p>
-	  				<strong> ${propiedades[keys].operacion}</strong>
+	  				<span id="realStateTittle"><strong>${propiedades[keys].operacion}</strong></span>
 	  				${propiedades[keys].descripcion}
 	  				</p>
 	  				</a>

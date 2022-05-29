@@ -804,7 +804,10 @@ select {
 
 .filter .element-item p strong {
 	color: #222222;
+	font-size: 1.125rem;
 }
+
+
 
 
 /************************/
