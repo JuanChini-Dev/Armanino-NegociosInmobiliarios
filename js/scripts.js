@@ -9,6 +9,11 @@ window.onscroll = function () {
 
 window.onload = function () {
   scrollFunction()
+  clickOnAllallRealEstate()
+}
+
+function clickOnAllallRealEstate() {
+  document.getElementById('allRealEstate').click()
 }
 
 function scrollFunction() {
@@ -97,14 +102,65 @@ var cardSlider = new Swiper('.card-slider', {
   },
 })
 
+let prop = [
+  {
+    operacion: 'Venta',
+    tipo: 'Terrenos',
+    descripcion: 'Casa en venta en la colonia del Valle',
+    imagen: 'depto.jpeg',
+    web:
+      'https://clasificados.lavoz.com.ar/avisos/casas/4622869/se-vende-casa-2-dor-empalme-muy-buena-ubicacion-reciclar',
+  },
+  {
+    operacion: 'Alquiler',
+    tipo: 'Casas',
+    descripcion: 'Casa en alquiler en la colonia del Valle',
+    imagen: 'depto.jpeg',
+    web:
+      'https://clasificados.lavoz.com.ar/avisos/casas/4622869/se-vende-casa-2-dor-empalme-muy-buena-ubicacion-reciclar',
+  },
+  {
+    operacion: 'Alquiler',
+    tipo: 'Casas',
+    descripcion: 'Casa en alquiler en la colonia del Valle',
+    imagen: 'depto.jpeg',
+    web:
+      'https://clasificados.lavoz.com.ar/avisos/casas/4622869/se-vende-casa-2-dor-empalme-muy-buena-ubicacion-reciclar',
+  },
+  {
+    operacion: 'Venta',
+    tipo: 'Terrenos',
+    descripcion: 'Casa en venta en la colonia del Valle',
+    imagen: 'depto.jpeg',
+    web:
+      'https://clasificados.lavoz.com.ar/avisos/casas/4622869/se-vende-casa-2-dor-empalme-muy-buena-ubicacion-reciclar',
+  },
+  {
+    operacion: 'Alquiler',
+    tipo: 'Casas',
+    descripcion: 'Casa en alquiler en la colonia del Valle',
+    imagen: 'depto.jpeg',
+    web:
+      'https://clasificados.lavoz.com.ar/avisos/casas/4622869/se-vende-casa-2-dor-empalme-muy-buena-ubicacion-reciclar',
+  },
+  {
+    operacion: 'Alquiler',
+    tipo: 'Casas',
+    descripcion: 'Casa en alquiler en la colonia del Valle',
+    imagen: 'depto.jpeg',
+    web:
+      'https://clasificados.lavoz.com.ar/avisos/casas/4622869/se-vende-casa-2-dor-empalme-muy-buena-ubicacion-reciclar',
+  },
+]
+
 /* Filter - Isotope */
 document.addEventListener('DOMContentLoaded', function () {
   let divi = document.getElementById('cards')
   let propiedades = prop
   for (const keys in propiedades) {
     divi.innerHTML += `<div class="element-item ${propiedades[keys].tipo} ${propiedades[keys].operacion}">
-	  		<a href="https://clasificados.lavoz.com.ar/avisos/casas/4622869/se-vende-casa-2-dor-empalme-muy-buena-ubicacion-reciclar">
-	  			<img class="img-fluid" src="images/project-1.jpg" alt="alternative" />
+	  		<a href="${propiedades[keys].web}" target="_blank">
+	  			<img class="img-fluid" src="images/${propiedades[keys].imagen}" alt="alternative"  />
 	  				<p>
 	  				<strong> ${propiedades[keys].operacion}</strong>
 	  				${propiedades[keys].descripcion}
@@ -171,29 +227,6 @@ function scrollFunctionBTT() {
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-  document.body.scrollTop = 0 // for Safari
-  document.documentElement.scrollTop = 0 // for Chrome, Firefox, IE and Opera
+  // document.body.scrollTop = 0 // for Safari
+  // document.documentElement.scrollTop = 0 // for Chrome, Firefox, IE and Opera
 }
-
-function createProp() {}
-
-let prop = [
-  {
-    operacion: 'venta',
-    tipo: 'terrenos',
-    descripcion: 'Casa en venta en la colonia del Valle',
-    imagen: 'https://picsum.photos/200/300',
-  },
-  {
-    operacion: 'alquiler',
-    tipo: 'casas',
-    descripcion: 'Casa en alquiler en la colonia del Valle',
-    imagen: 'https://picsum.photos/200/300',
-  },
-  {
-    operacion: 'alquiler',
-    tipo: 'casas',
-    descripcion: 'Casa en alquiler en la colonia del Valle',
-    imagen: 'https://picsum.photos/200/300',
-  },
-]
