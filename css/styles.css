@@ -1094,7 +1094,7 @@ select {
   	z-index: 99; 
 	bottom: 60px; 
 	right: 40px; 
-	display: block; 
+	display: none; 
 	width: 70px;
 	height: 70px;
 	border: none; 
