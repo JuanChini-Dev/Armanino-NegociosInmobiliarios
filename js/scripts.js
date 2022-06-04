@@ -102,57 +102,6 @@ var cardSlider = new Swiper('.card-slider', {
   },
 })
 
-let prop = [
-  {
-    operacion: 'Venta -',
-    tipo: 'Terrenos',
-    descripcion: 'Casa en venta en la colonia del Valle',
-    imagen: 'depto.jpeg',
-    web:
-      'https://clasificados.lavoz.com.ar/avisos/casas/4622869/se-vende-casa-2-dor-empalme-muy-buena-ubicacion-reciclar',
-  },
-  {
-    operacion: 'Alquiler -',
-    tipo: 'Casas',
-    descripcion: 'Casa en alquiler en la colonia del Valle',
-    imagen: 'depto.jpeg',
-    web:
-      'https://clasificados.lavoz.com.ar/avisos/casas/4622869/se-vende-casa-2-dor-empalme-muy-buena-ubicacion-reciclar',
-  },
-  {
-    operacion: 'Alquiler -',
-    tipo: 'Casas',
-    descripcion: 'Casa en alquiler en la colonia del Valle',
-    imagen: 'depto.jpeg',
-    web:
-      'https://clasificados.lavoz.com.ar/avisos/casas/4622869/se-vende-casa-2-dor-empalme-muy-buena-ubicacion-reciclar',
-  },
-  {
-    operacion: 'Venta -',
-    tipo: 'Terrenos',
-    descripcion: 'Casa en venta en la colonia del Valle',
-    imagen: 'depto.jpeg',
-    web:
-      'https://clasificados.lavoz.com.ar/avisos/casas/4622869/se-vende-casa-2-dor-empalme-muy-buena-ubicacion-reciclar',
-  },
-  {
-    operacion: 'Alquiler -',
-    tipo: 'Casas',
-    descripcion: 'Casa en alquiler en la colonia del Valle',
-    imagen: 'depto.jpeg',
-    web:
-      'https://clasificados.lavoz.com.ar/avisos/casas/4622869/se-vende-casa-2-dor-empalme-muy-buena-ubicacion-reciclar',
-  },
-  {
-    operacion: 'Alquiler -',
-    tipo: 'Casas',
-    descripcion: 'Casa en alquiler en la colonia del Valle',
-    imagen: 'depto.jpeg',
-    web:
-      'https://clasificados.lavoz.com.ar/avisos/casas/4622869/se-vende-casa-2-dor-empalme-muy-buena-ubicacion-reciclar',
-  },
-]
-
 /* Filter - Isotope */
 document.addEventListener('DOMContentLoaded', function () {
   let divi = document.getElementById('cards')
@@ -225,8 +174,37 @@ function scrollFunctionBTT() {
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  // document.body.scrollTop = 0 // for Safari
-  // document.documentElement.scrollTop = 0 // for Chrome, Firefox, IE and Opera
-}
+let prop = [
+  {
+    operacion: 'Venta -',
+    tipo: 'Departamentos',
+    descripcion: 'Departamento en venta 1 dormitorio a estrenar con balcón',
+    imagen: 'depto.jpeg',
+    web:
+      'https://clasificados.lavoz.com.ar/avisos/departamentos/4486468/vende-1-dorm-a-estrenar-con-balcon-45-mts-propios',
+  },
+  {
+    operacion: 'Venta -',
+    tipo: 'Casas',
+    descripcion: 'Casa en venta 3 dormitorios en Villa Allende',
+    imagen: 'casa.jpeg',
+    web:
+      'https://clasificados.lavoz.com.ar/avisos/casas/4710847/se-vende-casa-3-dorm-villa-allende',
+  },
+  {
+    operacion: 'Venta -',
+    tipo: 'Casas',
+    descripcion: 'Casa de catergoría en venta en La Estanzuela',
+    imagen: 'casacategoria.jpeg',
+    web:
+      'https://clasificados.lavoz.com.ar/avisos/casas/4710022/se-vende-casa-de-categoria-3-dorm-en-estanzuela',
+  },
+  {
+    operacion: 'Venta -',
+    tipo: 'Casas',
+    descripcion: 'Casa en venta con pileta y vista a las sierras',
+    imagen: 'casapileta.jpeg',
+    web:
+      'https://clasificados.lavoz.com.ar/avisos/casas/4742448/se-vende-casa-2-dorm-con-pileta-vista-a-sierras',
+  },
+]

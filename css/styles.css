@@ -591,6 +591,8 @@ select {
 }
 
 
+
+
 /*********************/
 /*     Details 1     */
 /*********************/
@@ -795,6 +797,8 @@ select {
 	margin-bottom: 1.125rem;
 	border-radius: 8px;
 	border: 1px solid #5e6576;
+	width: 350px;
+	height: 150px;
 	
 }
 
@@ -1090,35 +1094,49 @@ select {
 /******************************/
 #myBtn {
 	position: fixed; 
-  	z-index: 99; 
-	bottom: 30px; 
-	right: 30px; 
+  z-index: 99; 
+	bottom: 60px; 
+	right: 40px; 
 	display: none; 
-	width: 52px;
-	height: 52px;
+	width: 70px;
+	height: 70px;
 	border: none; 
 	border-radius: 50%; 
 	outline: none; 
 	cursor: pointer; 
 	background-color: transparent;
 	margin-bottom: 0.25rem;
+  transition: transform .2s; /* Animation */
+
 
 }
 
-#myBtn img:hover {
-	width: 70px;
-	height: 70px;
-	
+#myBtn:hover {
+	width: 80px;
+	height: 80px;
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 #myBtn img {
 	margin-bottom: 0.25rem;
 	width: 52px;
 	height: 52px;
+
+}
+
+#myBtn p {
+  font-size: 12px;
+  text-align: center;
+  margin: -10px;
+  margin-top: 0.15rem;
 }
 
 
 
+#myBtn p:hover {
+  font-size: 14px;
+  display: "block";
+}
 
 /***********************/
 /*     Extra Pages     */
