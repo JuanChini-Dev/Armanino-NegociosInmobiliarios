@@ -317,21 +317,40 @@
         <div class="row">
           <div class="col-lg-12">
             <!-- Filter -->
-            <div class="button-group filters-button-group">
-              <button class="button is-checked" data-filter="*" id="allRealEstate">
+            <div class="button-group filter-button-group">
+              <button class="button-location is-checked" data-filter="*" id="allRealEstate">
                 Todas las propiedades
               </button>
-              <button class="button" data-filter=".Departamentos">
+              <button class="button-location" data-filter="Departamentos">
                 Departamentos
               </button>
-              <button class="button" data-filter=".Casas">Casas</button>
-              <button class="button" data-filter=".Terrenos">Terrenos</button>
+              <button class="button-location" data-filter="Casas">Casas</button>
+              <button class="button-location" data-filter="Terrenos">Terrenos</button>
               <br />
-              <button class="button" data-filter=".Alquiler">Alquileres</button>
-              <button class="button" data-filter=".Venta">Venta</button>
+              <button class="button-location" data-filter="Alquileres">Alquileres</button>
+              <button class="button-location" data-filter="Ventas">Venta</button>
             </div>
             <!-- end of button group -->
-            <div class="grid" id="cards"></div>
+            <div class="grid" id="cards">
+              <article class="cards">
+                <figure class="card element-item Departamentos Ventas">
+                  <img src="https://placeimg.com/200/200/nature" alt="Nature" />
+                  <figcaption>Nature</figcaption>
+                </figure>
+                <figure class="card element-item Casas Ventas">
+                  <img src="https://placeimg.com/200/200/animals" alt="Nature" />
+                  <figcaption>Animals</figcaption>
+                </figure>
+                <figure class="card element-item Casas Ventas">
+                  <img src="https://placeimg.com/200/200/nature" alt="Nature" />
+                  <figcaption>Nature</figcaption>
+                </figure>
+                <figure class="card element-item Departamentos Alquileres">
+                  <img src="https://placeimg.com/200/200/nature" alt="Nature" />
+                  <figcaption>Nature</figcaption>
+                </figure>
+              </article>
+            </div>
             <!-- end of grid -->
             <!-- end of filter -->
           </div>
@@ -480,6 +499,8 @@
     <!-- Images loaded -->
     <script src="js/isotope.pkgd.min.js"></script>
     <!-- Isotope for filter -->
+    <script src="./app.js" type="module"></script>
+    
     <script src="js/scripts.js"></script>
     <!-- Custom scripts -->
   </body>

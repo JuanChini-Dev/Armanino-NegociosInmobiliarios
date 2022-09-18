@@ -101,67 +101,104 @@ var cardSlider = new Swiper('.card-slider', {
   },
 })
 
-/* Filter - Isotope */
-document.addEventListener('DOMContentLoaded', function () {
-  let divi = document.getElementById('cards')
-  let propiedades = prop
-  for (const keys in propiedades) {
-    divi.innerHTML += `<div class="element-item ${propiedades[keys].tipo} ${propiedades[keys].operacion}">
-	  		<a href="${propiedades[keys].web}" target="_blank">
-	  			<img class="img-fluid" src="images/${propiedades[keys].imagen}" alt="alternative"  />
-	  				<p>
-	  				<span id="realStateTittle"><strong>${propiedades[keys].operacion}</strong></span>
-	  				${propiedades[keys].descripcion}
-	  				</p>
-	  				</a>
-	  		  </div>`
-  }
-
-  const gridCheck = document.querySelector('.grid')
-
-  if (gridCheck !== null) {
-    // init Isotope
-    var iso = new Isotope('.grid', {
-      itemSelector: '.element-item',
-      layoutMode: 'fitRows',
+document.addEventListener('click', (e) => {
+  if (e.target.matches('.button-location')) {
+    document.querySelectorAll('.button-location').forEach((el) => {
+      el.classList.remove('is-checked')
     })
+    e.target.classList.add('is-checked')
 
-    //DOCUMENT GET READY
-
-    // bind filter button click
-    var filtersElem = document.querySelector('.filters-button-group')
-    filtersElem.addEventListener('click', function (event) {
-      // only work with buttons
-      if (!matchesSelector(event.target, 'button')) {
-        return
-      }
-      var filterValue = event.target.getAttribute('data-filter')
-      // use matching filter function
-      iso.arrange({ filter: filterValue })
-    })
-
-    // change is-checked class on buttons
-    var buttonGroups = document.querySelectorAll('.button-group')
-    for (var i = 0, len = buttonGroups.length; i < len; i++) {
-      var buttonGroup = buttonGroups[i]
-      radioButtonGroup(buttonGroup)
-    }
-
-    function radioButtonGroup(buttonGroup) {
-      buttonGroup.addEventListener('click', function (event) {
-        // only work with buttons
-        if (!matchesSelector(event.target, 'button')) {
-          return
+    switch (e.target.dataset.filter) {
+      case '*':
+        {
+          document.querySelectorAll('.card').forEach((el) => {
+            el.classList.remove('filters')
+          })
         }
-        buttonGroup.querySelector('.is-checked').classList.remove('is-checked')
-        event.target.classList.add('is-checked')
-      })
+        break
+      case 'Departamentos':
+        {
+          document.querySelectorAll('.card').forEach((el) => {
+            if (el.className.includes('Departamentos')) {
+              el.classList.remove('filters')
+            } else {
+              el.classList.add('filters')
+            }
+          })
+        }
+        break
+      case 'Casas':
+        {
+          document.querySelectorAll('.card').forEach((el) => {
+            if (el.className.includes('Casas')) {
+              el.classList.remove('filters')
+            } else {
+              el.classList.add('filters')
+            }
+          })
+        }
+        break
+      case 'Oficinas':
+        {
+          document.querySelectorAll('.card').forEach((el) => {
+            if (el.className.includes('Oficinas')) {
+              el.classList.remove('filters')
+            } else {
+              el.classList.add('filters')
+            }
+          })
+        }
+        break
+      case 'Locales':
+        {
+          document.querySelectorAll('.card').forEach((el) => {
+            if (el.className.includes('Locales')) {
+              el.classList.remove('filters')
+            } else {
+              el.classList.add('filters')
+            }
+          })
+        }
+        break
+      case 'Terrenos':
+        {
+          document.querySelectorAll('.card').forEach((el) => {
+            if (el.className.includes('Terrenos')) {
+              el.classList.remove('filters')
+            } else {
+              el.classList.add('filters')
+            }
+          })
+        }
+        break
+      case 'Alquileres':
+        {
+          document.querySelectorAll('.card').forEach((el) => {
+            if (el.className.includes('Alquileres')) {
+              el.classList.remove('filters')
+            } else {
+              el.classList.add('filters')
+            }
+          })
+        }
+        break
+      case 'Ventas':
+        {
+          document.querySelectorAll('.card').forEach((el) => {
+            if (el.className.includes('Ventas')) {
+              el.classList.remove('filters')
+            } else {
+              el.classList.add('filters')
+            }
+          })
+        }
+        break
+      default:
+        break
     }
   }
 })
 
-/* Back To Top Button */
-// Get the button
 myButton = document.getElementById('myBtn')
 
 // When the user scrolls down 20px from the top of the document, show the button

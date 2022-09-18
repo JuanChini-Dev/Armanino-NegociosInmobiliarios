@@ -763,7 +763,7 @@ select {
 	margin-bottom: 1rem;
 }
 
-.filter .button {
+.filter .button-location {
 	margin-bottom: 0.75rem;
 	border: none;
 	background-color: transparent;
@@ -772,43 +772,37 @@ select {
 	font-size: 1rem;
 }
 
-.filter .button:hover,
+.filter .button-location:hover,
 
-.filter .button.is-checked {
+.filter .button-location.is-checked {
 	color: #ed3237;
 }
 
-.filter .grid {
-	margin-right: auto;
-	max-width: 350px;
-	margin-left: auto;
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-.filter .element-item {
-	margin-bottom: 3rem;
-	
+.card{
+background-color: var(--second-color);
+color: var(--main-color);
+transition: all 0.3s ease-out;
 }
 
-.filter .element-item a {
-	text-decoration: none;
+.card img{
+    width: 100%;
+    height: auto;
 }
 
-.filter .element-item img {
-	margin-bottom: 1.125rem;
-	border-radius: 8px;
-	border: 1px solid #5e6576;
-	width: 350px;
-	height: 150px;
-	
+.card figcaption{
+    padding: 1rem;
+    
 }
 
-.filter .element-item p {
-	text-align: left;
-}
-
-.filter .element-item p strong {
-	color: #222222;
-	font-size: 1.125rem;
+.filters{
+    visibility:hidden;
+    opacity: 0;
+    order: 1;
 }
 
 
@@ -1413,7 +1407,7 @@ select {
 
 
 	/* Projects */
-	.filter .button {
+	.filter .button-location {
 		margin-right: 0.25rem;
 		margin-left: 0.25rem;
 	}
