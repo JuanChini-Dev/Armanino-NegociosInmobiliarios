@@ -784,8 +784,8 @@ select {
 }
 
 .card{
-background-color: var(--second-color);
-color: var(--main-color);
+background-color: #fff;
+color: #000;
 transition: all 0.3s ease-out;
 }
 
@@ -803,6 +803,7 @@ transition: all 0.3s ease-out;
     visibility:hidden;
     opacity: 0;
     order: 1;
+	transition: 1s;
 }
 
 
