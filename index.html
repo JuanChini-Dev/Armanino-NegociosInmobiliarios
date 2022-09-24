@@ -56,7 +56,7 @@
           <img
             src="images/LogoArmanino.jpeg"
             alt="alternative"
-            style="width: 80px; height: 80px;"
+            style="width: auto; height: 100px;"
           />
         </a>
 
@@ -321,34 +321,23 @@
               <button class="button-location is-checked" data-filter="*" id="allRealEstate">
                 Todas las propiedades
               </button>
+              <button class="button-location" data-filter="Alquileres">Alquileres</button>
+              <button class="button-location" data-filter="Ventas">Venta</button>
+              <br />
+              <button class="button-location" data-filter="Casas">Casas</button>
               <button class="button-location" data-filter="Departamentos">
                 Departamentos
               </button>
-              <button class="button-location" data-filter="Casas">Casas</button>
+              <button class="button-location" data-filter="Oficinas">Oficinas</button>
+              <button class="button-location" data-filter="Lotes">Lotes</button>
               <button class="button-location" data-filter="Terrenos">Terrenos</button>
-              <br />
-              <button class="button-location" data-filter="Alquileres">Alquileres</button>
-              <button class="button-location" data-filter="Ventas">Venta</button>
             </div>
             <!-- end of button group -->
             <div class="grid" id="cards">
-              <article class="cards">
-                <figure class="card element-item Departamentos Ventas">
-                  <img src="https://placeimg.com/200/200/nature" alt="Nature" />
-                  <figcaption>Nature</figcaption>
-                </figure>
-                <figure class="card element-item Casas Ventas">
-                  <img src="https://placeimg.com/200/200/animals" alt="Nature" />
-                  <figcaption>Animals</figcaption>
-                </figure>
-                <figure class="card element-item Casas Ventas">
-                  <img src="https://placeimg.com/200/200/nature" alt="Nature" />
-                  <figcaption>Nature</figcaption>
-                </figure>
-                <figure class="card element-item Departamentos Alquileres">
-                  <img src="https://placeimg.com/200/200/nature" alt="Nature" />
-                  <figcaption>Nature</figcaption>
-                </figure>
+              <article class="cards cards-article">
+              <div class="content">
+                <img src="./images/loader.svg" alt="">
+              </div>
               </article>
             </div>
             <!-- end of grid -->
@@ -457,14 +446,13 @@
           <div class="col-lg-6">
             <ul class="list-unstyled li-space-lg p-small">
               <!-- <li><a href="article.html">Article Details</a></li> -->
-              <li><a href="terms.html">Terminos y Condiciones</a></li>
+              <li><a href="">Terminos y Condiciones</a></li>
               <!-- <li><a href="privacy.html">Privacy Policy</a></li> -->
             </ul>
           </div>
           <!-- end of col -->
           <div class="col-lg-6">
             <p class="p-small statement">
-              Copyright ©
               <a href="#">Juan Chini</a>
             </p>
           </div>
@@ -499,7 +487,7 @@
     <!-- Images loaded -->
     <script src="js/isotope.pkgd.min.js"></script>
     <!-- Isotope for filter -->
-    <script src="./app.js" type="module"></script>
+    
     
     <script src="js/scripts.js"></script>
     <!-- Custom scripts -->

@@ -1,7 +1,3 @@
-/* Description: Custom JS file */
-
-/* Navigation*/
-// Collapse the navbar by adding the top-nav-collapse class
 window.onload = function () {
   scrollFunction()
   clickOnAllallRealEstate()
@@ -119,7 +115,7 @@ document.addEventListener('click', (e) => {
       case 'Departamentos':
         {
           document.querySelectorAll('.card').forEach((el) => {
-            if (el.className.includes('Departamentos')) {
+            if (el.className.includes('Apartment')) {
               el.classList.remove('filters')
             } else {
               el.classList.add('filters')
@@ -130,7 +126,7 @@ document.addEventListener('click', (e) => {
       case 'Casas':
         {
           document.querySelectorAll('.card').forEach((el) => {
-            if (el.className.includes('Casas')) {
+            if (el.className.includes('House')) {
               el.classList.remove('filters')
             } else {
               el.classList.add('filters')
@@ -141,7 +137,7 @@ document.addEventListener('click', (e) => {
       case 'Oficinas':
         {
           document.querySelectorAll('.card').forEach((el) => {
-            if (el.className.includes('Oficinas')) {
+            if (el.className.includes('Office')) {
               el.classList.remove('filters')
             } else {
               el.classList.add('filters')
@@ -160,10 +156,21 @@ document.addEventListener('click', (e) => {
           })
         }
         break
+      case 'Lotes':
+        {
+          document.querySelectorAll('.card').forEach((el) => {
+            if (el.className.includes('Land')) {
+              el.classList.remove('filters')
+            } else {
+              el.classList.add('filters')
+            }
+          })
+        }
+        break
       case 'Terrenos':
         {
           document.querySelectorAll('.card').forEach((el) => {
-            if (el.className.includes('Terrenos')) {
+            if (el.className.includes('Ranch')) {
               el.classList.remove('filters')
             } else {
               el.classList.add('filters')
@@ -174,7 +181,7 @@ document.addEventListener('click', (e) => {
       case 'Alquileres':
         {
           document.querySelectorAll('.card').forEach((el) => {
-            if (el.className.includes('Alquileres')) {
+            if (el.className.includes('Rent')) {
               el.classList.remove('filters')
             } else {
               el.classList.add('filters')
@@ -185,7 +192,7 @@ document.addEventListener('click', (e) => {
       case 'Ventas':
         {
           document.querySelectorAll('.card').forEach((el) => {
-            if (el.className.includes('Ventas')) {
+            if (el.className.includes('Sale')) {
               el.classList.remove('filters')
             } else {
               el.classList.add('filters')
@@ -199,6 +206,26 @@ document.addEventListener('click', (e) => {
   }
 })
 
+url = 'https://express-armanino-neg-inmb-production.up.railway.app/'
+let html = ''
+fetch(url)
+  .then((response) => response.json())
+  .then((data) => {
+    // console.log(data)
+    data.forEach((el) => {
+      html += `<div class="card location element-item ${el.type} ${el.operation}" style="">
+        <img src="${el.image}" class="card-img-top" alt="${el.title}">
+        <div class="card-body">
+          <p class="card-text">${el.title}</p>
+        </div>
+        <div class="card-footer">
+          <a href="${el.url}" target="_blank" class="btn btn-primary">Ver mas</a>
+        </div>
+      </div>`
+    })
+    document.querySelector('.cards-article').innerHTML = html
+  })
+
 myButton = document.getElementById('myBtn')
 
 // When the user scrolls down 20px from the top of the document, show the button
@@ -209,38 +236,3 @@ function scrollFunctionBTT() {
     myButton.style.display = 'none'
   }
 }
-
-let prop = [
-  {
-    operacion: 'Venta -',
-    tipo: 'Departamentos',
-    descripcion: 'Departamento en venta 1 dormitorio a estrenar con balcón',
-    imagen: 'depto.jpeg',
-    web:
-      'https://clasificados.lavoz.com.ar/avisos/departamentos/4486468/vende-1-dorm-a-estrenar-con-balcon-45-mts-propios',
-  },
-  {
-    operacion: 'Venta -',
-    tipo: 'Casas',
-    descripcion: 'Casa en venta 3 dormitorios en Villa Allende',
-    imagen: 'casa.jpeg',
-    web:
-      'https://clasificados.lavoz.com.ar/avisos/casas/4710847/se-vende-casa-3-dorm-villa-allende',
-  },
-  {
-    operacion: 'Venta -',
-    tipo: 'Casas',
-    descripcion: 'Casa de catergoría en venta en La Estanzuela',
-    imagen: 'casacategoria.jpeg',
-    web:
-      'https://clasificados.lavoz.com.ar/avisos/casas/4710022/se-vende-casa-de-categoria-3-dorm-en-estanzuela',
-  },
-  {
-    operacion: 'Venta -',
-    tipo: 'Casas',
-    descripcion: 'Casa en venta con pileta y vista a las sierras',
-    imagen: 'casapileta.jpeg',
-    web:
-      'https://clasificados.lavoz.com.ar/avisos/casas/4742448/se-vende-casa-2-dorm-con-pileta-vista-a-sierras',
-  },
-]
