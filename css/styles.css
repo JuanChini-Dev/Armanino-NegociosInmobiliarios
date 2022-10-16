@@ -691,8 +691,6 @@ select {
 }
 
 .location img{
-	margin-top:20px;
-    width: 150px;
     height: 15vw;
     object-fit:cover;
 }
@@ -728,8 +726,7 @@ select {
  @media (max-width: 768px) {
 	
 	.location img{
-		margin-top:20px;
-		width: 250px;
+		
 		height: 30vw;
 		object-fit:cover;
 	}

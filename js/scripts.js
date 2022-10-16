@@ -1,6 +1,9 @@
 window.onload = function () {
   scrollFunction()
   clickOnAllallRealEstate()
+
+  renderData()
+  // renderPagination()
 }
 window.onscroll = function () {
   scrollFunction()
@@ -75,27 +78,6 @@ if (dropdownCheck !== null) {
     }
   })
 }
-
-/* Card Slider - Swiper */
-var cardSlider = new Swiper('.card-slider', {
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-  },
-  loop: true,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  slidesPerView: 2,
-  spaceBetween: 70,
-  breakpoints: {
-    // when window is <= 991px
-    991: {
-      slidesPerView: 1,
-    },
-  },
-})
 
 document.addEventListener('click', (e) => {
   if (e.target.matches('.button-location')) {
@@ -203,28 +185,87 @@ document.addEventListener('click', (e) => {
       default:
         break
     }
+
+    document.querySelectorAll('.card').forEach((el) => {
+      if (el.className.includes('filters')) {
+        el.classList.add('d-none')
+      } else {
+        el.classList.remove('d-none')
+      }
+    })
   }
 })
 
-url = 'https://express-armanino-neg-inmb-production.up.railway.app/'
+// url = 'https://express-armanino-neg-inmb-production.up.railway.app/'
+
+let url = `http://localhost:3001/propiedades/`
 let html = ''
-fetch(url)
-  .then((response) => response.json())
-  .then((data) => {
-    // console.log(data)
+let limit = 0
+let offset = 100
+
+const getData = async () => {
+  const response = await fetch(url + `?limit=${limit}&offset=${offset}`)
+  const data = await response.json()
+  if (!data) throw new Error('No hay datos')
+  return data
+}
+const pagination = document.querySelector('.cards-article')
+
+const renderData = async () => {
+  try {
+    pagination.innerHTML = ''
+    const data = await getData()
     data.forEach((el) => {
-      html += `<div class="card location element-item ${el.type} ${el.operation}" style="">
+      html += `<div class="card location element-item ${el.type} ${
+        el.operation
+      }" style="">
         <img src="${el.image}" class="card-img-top" alt="${el.title}">
         <div class="card-body">
+          <p><b>${el.operation === 'Sale' ? 'Venta' : 'Alquiler'}</b></p>
           <p class="card-text">${el.title}</p>
         </div>
         <div class="card-footer">
-          <a href="${el.url}" target="_blank" class="btn btn-primary">Ver mas</a>
+          <a href="${
+            el.url
+          }" target="_blank" class="btn btn-primary" href="">Ver mas</a>
         </div>
       </div>`
     })
-    document.querySelector('.cards-article').innerHTML = html
-  })
+    pagination.insertAdjacentHTML('beforeEnd', html)
+  } catch (err) {
+    console.log(err)
+  }
+}
+
+// const renderPagination = async () => {
+//   const response = await fetch(url)
+//   const data = await response.json()
+
+//   if (!data) throw new Error('No hay datos')
+//   let pagination = document.querySelector('.pagination')
+//   let html = ''
+//   let pages = Math.ceil(data.length / 12)
+//   for (let i = 1; i <= pages; i++) {
+//     html += `<li class="page-item"><button class="page-link" data-page=${i}>${i}</button></li>`
+//   }
+//   pagination.insertAdjacentHTML('beforeend', html)
+// }
+
+// document.addEventListener('click', (e) => {
+//   if (e.target.matches('.page-link')) {
+//     document.querySelectorAll('.page-link').forEach((el) => {
+//       el.parentElement.classList.remove('active')
+//     })
+//     e.target.parentElement.classList.add('active')
+
+//     limit = e.target.dataset.page * 12 - 12
+//     offset = e.target.dataset.page * 12
+
+//     setTimeout(() => {
+//       renderData()
+//     }, 500)
+//   }
+// })
 
 myButton = document.getElementById('myBtn')
 
