@@ -196,9 +196,10 @@ document.addEventListener('click', (e) => {
   }
 })
 
-// url = 'https://express-armanino-neg-inmb-production.up.railway.app/'
+let url =
+  'https://express-armanino-neg-inmb-production.up.railway.app/propiedades'
 
-let url = `http://localhost:3001/propiedades/`
+// let url = `http://localhost:3001/propiedades/`
 let html = ''
 let limit = 0
 let offset = 100
